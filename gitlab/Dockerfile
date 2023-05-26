@@ -2,6 +2,7 @@ FROM mcr.microsoft.com/playwright:v1.31.2-jammy
 
 COPY fonts.conf /etc/fonts/local.conf
 
+RUN apt-get update -y
 RUN apt-get -y -qq install software-properties-common && \
   apt-add-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 
