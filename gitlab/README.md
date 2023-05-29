@@ -1,0 +1,1 @@
+docker buildx build -t cezudas/playwright-latest-headless-chrome:latest--platform=linux/arm64,linux/amd64 .
